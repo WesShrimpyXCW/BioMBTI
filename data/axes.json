@@ -1,0 +1,65 @@
+const axes = [
+  {
+    id: "Abstract",
+    cn: "具象 ↔ 抽象",
+    en: "Concrete / Abstract",
+    left: "具象",
+    right: "抽象"
+  },
+  {
+    id: "Theory",
+    cn: "理论 ↔ 应用",
+    en: "Theory / Application",
+    left: "理论",
+    right: "应用"
+  },
+  {
+    id: "Structure",
+    cn: "规律 ↔ 自由",
+    en: "Structure / Exploration",
+    left: "规律",
+    right: "自由"
+  },
+  {
+    id: "Independent",
+    cn: "独立 ↔ 社交",
+    en: "Independent / Collaborative",
+    left: "独立",
+    right: "社交"
+  },
+  {
+    id: "Delayed",
+    cn: "长周期 ↔ 快反馈",
+    en: "Delayed / Immediate",
+    left: "长周期",
+    right: "快反馈"
+  },
+  {
+    id: "Prestige",
+    cn: "名誉/兴趣 ↔ 收入",
+    en: "Prestige / Income",
+    left: "名誉/兴趣",
+    right: "收入"
+  },
+  {
+    id: "Precision",
+    cn: "细节 ↔ 容错",
+    en: "Precision / Tolerance",
+    left: "细节",
+    right: "容错"
+  },
+  {
+    id: "Stability",
+    cn: "稳定 ↔ 探险",
+    en: "Stability / Risk",
+    left: "稳定",
+    right: "探险"
+  },
+  {
+    id: "Dry",
+    cn: "干实验 ↔ 湿实验",
+    en: "Dry / Wet",
+    left: "干实验",
+    right: "湿实验"
+  }
+];

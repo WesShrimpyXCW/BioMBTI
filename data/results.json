@@ -1,0 +1,788 @@
+const results = [
+  {
+    name: "肿瘤生物学",
+    scores: {
+      Abstract: 6,
+      Theory: 8,
+      Structure: 3,
+      Independent: 7,
+      Delayed: 4,
+      Prestige: 4,
+      Precision: 3,
+      Stability: 7,
+      Dry: 8
+    },
+    quote: "Cause the hardest part of this is leaving you.\n—— My Chemical Romance《Cancer》"
+  },
+
+  {
+    name: "免疫学",
+    scores: {
+      Abstract: 5,
+      Theory: 8,
+      Structure: 3,
+      Independent: 8,
+      Delayed: 5,
+      Prestige: 4,
+      Precision: 4,
+      Stability: 7,
+      Dry: 8
+    },
+    quote: "Not a force, but a balance.\n—— Niels Jerne"
+  },
+
+  {
+    name: "神经生物学",
+    scores: {
+      Abstract: 4,
+      Theory: 5,
+      Structure: 5,
+      Independent: 4,
+      Delayed: 2,
+      Prestige: 3,
+      Precision: 2,
+      Stability: 9,
+      Dry: 9
+    },
+    quote: "Fire together, wire together.\n—— Donald Hebb"
+  },
+
+  {
+    name: "衰老研究",
+    scores: {
+      Abstract: 4,
+      Theory: 6,
+      Structure: 3,
+      Independent: 4,
+      Delayed: 1,
+      Prestige: 5,
+      Precision: 4,
+      Stability: 10,
+      Dry: 8
+    },
+    quote: "遣徐福发童男女数千人，入海求仙人不死药。\n——《史记·秦始皇本纪》"
+  },
+
+  {
+    name: "发育生物学",
+    scores: {
+      Abstract: 5,
+      Theory: 4,
+      Structure: 5,
+      Independent: 4,
+      Delayed: 2,
+      Prestige: 2,
+      Precision: 2,
+      Stability: 8,
+      Dry: 9
+    },
+    quote: "人类的前额叶要到25岁才发育完全，因此在25岁前人类在生物学意义上属于脑残。"
+  },
+
+  {
+    name: "干细胞与再生医学",
+    scores: {
+      Abstract: 5,
+      Theory: 8,
+      Structure: 3,
+      Independent: 7,
+      Delayed: 3,
+      Prestige: 6,
+      Precision: 3,
+      Stability: 8,
+      Dry: 9
+    },
+    quote: "From cells to cures."
+  },
+
+  {
+    name: "感染与病原生物学",
+    scores: {
+      Abstract: 6,
+      Theory: 8,
+      Structure: 4,
+      Independent: 8,
+      Delayed: 5,
+      Prestige: 4,
+      Precision: 4,
+      Stability: 7,
+      Dry: 9
+    },
+    quote: "瘟疫对贵族与农民一视同仁地降下打击。\n——《十日谈》"
+  },
+
+  {
+    name: "代谢与代谢疾病",
+    scores: {
+      Abstract: 5,
+      Theory: 7,
+      Structure: 5,
+      Independent: 6,
+      Delayed: 4,
+      Prestige: 6,
+      Precision: 4,
+      Stability: 6,
+      Dry: 8
+    },
+    quote: "You are what you eat."
+  },
+
+  {
+    name: "分子生物学",
+    scores: {
+      Abstract: 3,
+      Theory: 4,
+      Structure: 6,
+      Independent: 3,
+      Delayed: 3,
+      Prestige: 3,
+      Precision: 2,
+      Stability: 7,
+      Dry: 8
+    },
+    quote: "We've discovered the secret of life.\n—— Francis Crick"
+  },
+
+  {
+    name: "细胞生物学",
+    scores: {
+      Abstract: 4,
+      Theory: 4,
+      Structure: 6,
+      Independent: 3,
+      Delayed: 3,
+      Prestige: 2,
+      Precision: 2,
+      Stability: 7,
+      Dry: 8
+    },
+    quote: "这些小孔，或小室，看起来很像蜂巢。\n—— Robert Hooke"
+  },
+
+ 
+  {
+    name: "生物化学",
+    scores: {
+      Abstract: 2,
+      Theory: 3,
+      Structure: 4,
+      Independent: 3,
+      Delayed: 4,
+      Prestige: 2,
+      Precision: 1,
+      Stability: 6,
+      Dry: 7
+    },
+    quote: "Life is chemistry."
+  },
+
+  {
+    name: "结构生物学",
+    scores: {
+      Abstract: 1,
+      Theory: 2,
+      Structure: 6,
+      Independent: 2,
+      Delayed: 1,
+      Prestige: 1,
+      Precision: 1,
+      Stability: 8,
+      Dry: 6
+    },
+    quote: "我现在每天能睡六个小时，比以前多多了。\n——施一公"
+  },
+
+  {
+    name: "生物物理学",
+    scores: {
+      Abstract: 1,
+      Theory: 2,
+      Structure: 7,
+      Independent: 3,
+      Delayed: 2,
+      Prestige: 2,
+      Precision: 1,
+      Stability: 9,
+      Dry: 4
+    },
+    quote: "只有一门真正的科学，那就是物理学；其他都是社会工作。\n—— James Watson"
+  },
+
+  {
+    name: "组学科学",
+    scores: {
+      Abstract: 3,
+      Theory: 7,
+      Structure: 6,
+      Independent: 8,
+      Delayed: 6,
+      Prestige: 5,
+      Precision: 2,
+      Stability: 7,
+      Dry: 4
+    },
+    quote: "我们现在有能力阅读生命之书。\n—— Francis Collins"
+  },
+
+  {
+    name: "系统生物学",
+    scores: {
+      Abstract: 2,
+      Theory: 4,
+      Structure: 8,
+      Independent: 6,
+      Delayed: 3,
+      Prestige: 3,
+      Precision: 3,
+      Stability: 8,
+      Dry: 2
+    },
+    quote: "生物学的未来是预测性的、预防性的、个性化的、参与式的。\n—— Leroy Hood"
+  },
+
+  {
+    name: "计算药物发现",
+    scores: {
+      Abstract: 2,
+      Theory: 9,
+      Structure: 6,
+      Independent: 7,
+      Delayed: 7,
+      Prestige: 8,
+      Precision: 3,
+      Stability: 6,
+      Dry: 1
+    },
+    quote: "神农尝百草之滋味，一日而遇七十毒。\n——《淮南子》"
+  },
+
+  {
+    name: "演化生物学/群体遗传学",
+    scores: {
+      Abstract: 5,
+      Theory: 3,
+      Structure: 8,
+      Independent: 4,
+      Delayed: 4,
+      Prestige: 1,
+      Precision: 3,
+      Stability: 7,
+      Dry: 2
+    },
+    quote: "生存下来的物种，不是最强的，也不是最聪明的，而是对变化最敏感的。"
+  },
+
+  {
+    name: "合成生物学",
+    scores: {
+      Abstract: 4,
+      Theory: 9,
+      Structure: 8,
+      Independent: 7,
+      Delayed: 5,
+      Prestige: 7,
+      Precision: 5,
+      Stability: 8,
+      Dry: 7
+    },
+    quote: "耶稣将水变成了酒。\n——《约翰福音 2:9》"
+  },
+
+  {
+    name: "发酵工程",
+    scores: {
+      Abstract: 6,
+      Theory: 9,
+      Structure: 3,
+      Independent: 8,
+      Delayed: 8,
+      Prestige: 8,
+      Precision: 5,
+      Stability: 3,
+      Dry: 9
+    },
+    quote: "啊，今夜我们千杯不醉，那么就让我们，为爱情再干一杯。\n——《茶花女》"
+  },
+
+  {
+    name: "生物制药",
+    scores: {
+      Abstract: 5,
+      Theory: 10,
+      Structure: 4,
+      Independent: 4,
+      Delayed: 6,
+      Prestige: 8,
+      Precision: 3,
+      Stability: 4,
+      Dry: 8
+    },
+    quote: "该药物将在晚期临床成功后向FDA申请上市批准。"
+  }  ,
+
+  {
+    name: "基因工程",
+    scores: {
+      Abstract: 4,
+      Theory: 8,
+      Structure: 5,
+      Independent: 6,
+      Delayed: 5,
+      Prestige: 6,
+      Precision: 4,
+      Stability: 7,
+      Dry: 8
+    },
+    quote: "于是神照着自己的形象造人。\n——《创世纪 1:27》"
+  },
+
+  {
+    name: "蛋白工程",
+    scores: {
+      Abstract: 3,
+      Theory: 8,
+      Structure: 5,
+      Independent: 5,
+      Delayed: 4,
+      Prestige: 6,
+      Precision: 3,
+      Stability: 7,
+      Dry: 7
+    },
+    quote: "上帝不过如此，我来优化一下。"
+  },
+
+  {
+    name: "医疗器械",
+    scores: {
+      Abstract: 7,
+      Theory: 10,
+      Structure: 4,
+      Independent: 9,
+      Delayed: 8,
+      Prestige: 9,
+      Precision: 4,
+      Stability: 3,
+      Dry: 3
+    },
+    quote: "从核磁共振，到柔情猫娘。"
+  },
+
+  {
+    name: "神经工程 / 技术",
+    scores: {
+      Abstract: 5,
+      Theory: 9,
+      Structure: 8,
+      Independent: 7,
+      Delayed: 3,
+      Prestige: 8,
+      Precision: 5,
+      Stability: 10,
+      Dry: 4
+    },
+    quote: "感谢Neuralink让我可以继续玩《文明VI》了，而且我可以一连玩8个小时！\n——Arbaugh"
+  },
+
+  {
+    name: "医学影像",
+    scores: {
+      Abstract: 6,
+      Theory: 9,
+      Structure: 6,
+      Independent: 7,
+      Delayed: 7,
+      Prestige: 8,
+      Precision: 3,
+      Stability: 4,
+      Dry: 2
+    },
+    quote: "阴影从不解释自己。"
+  },
+
+  {
+    name: "生物传感器/生物芯片",
+    scores: {
+      Abstract: 5,
+      Theory: 9,
+      Structure: 7,
+      Independent: 7,
+      Delayed: 6,
+      Prestige: 7,
+      Precision: 4,
+      Stability: 7,
+      Dry: 5
+    },
+    quote: "Lab on a chip."
+  },
+
+  {
+    name: "药物递送/纳米医学",
+    scores: {
+      Abstract: 4,
+      Theory: 9,
+      Structure: 6,
+      Independent: 3,
+      Delayed: 4,
+      Prestige: 7,
+      Precision: 3,
+      Stability: 7,
+      Dry: 7
+    },
+    quote: "东风快递，使命必达。"
+  },
+
+  {
+    name: "行为/系统神经科学",
+    scores: {
+      Abstract: 9,
+      Theory: 6,
+      Structure: 7,
+      Independent: 5,
+      Delayed: 3,
+      Prestige: 4,
+      Precision: 6,
+      Stability: 7,
+      Dry: 8
+    },
+    quote: "我思故我在。"
+  },
+
+  {
+    name: "动物行为学",
+    scores: {
+      Abstract: 10,
+      Theory: 5,
+      Structure: 9,
+      Independent: 2,
+      Delayed: 4,
+      Prestige: 3,
+      Precision: 8,
+      Stability: 7,
+      Dry: 7
+    },
+    quote: "只有理解，才会关心；只有关心，才会帮助。\n——Jane Goodall"
+  },
+
+  {
+    name: "植物科学",
+    scores: {
+      Abstract: 8,
+      Theory: 5,
+      Structure: 2,
+      Independent: 2,
+      Delayed: 3,
+      Prestige: 2,
+      Precision: 6,
+      Stability: 4,
+      Dry: 8
+    },
+    quote: "一沙一世界，一花一天堂。\n——William Blake"
+  }  ,
+
+  {
+    name: "微生物生态/宏基因组",
+    scores: {
+      Abstract: 8,
+      Theory: 7,
+      Structure: 4,
+      Independent: 6,
+      Delayed: 3,
+      Prestige: 6,
+      Precision: 7,
+      Stability: 6,
+      Dry: 5
+    },
+    quote: "《通过靶向肠道菌群调控人体的物质需求欲望有望提高廉政文化建设效率》"
+  },
+
+  {
+    name: "生态学",
+    scores: {
+      Abstract: 10,
+      Theory: 4,
+      Structure: 8,
+      Independent: 3,
+      Delayed: 2,
+      Prestige: 1,
+      Precision: 8,
+      Stability: 8,
+      Dry: 5
+    },
+    quote: "经费没有，热情管够。"
+  },
+
+  {
+    name: "海洋生物学",
+    scores: {
+      Abstract: 9,
+      Theory: 5,
+      Structure: 9,
+      Independent: 2,
+      Delayed: 3,
+      Prestige: 1,
+      Precision: 8,
+      Stability: 8,
+      Dry: 6
+    },
+    quote: "再见了妈妈，今晚我就要远航。\n——《再见了妈妈》"
+  },
+
+  {
+    name: "保护生物学",
+    scores: {
+      Abstract: 9,
+      Theory: 7,
+      Structure: 9,
+      Independent: 8,
+      Delayed: 3,
+      Prestige: 1,
+      Precision: 8,
+      Stability: 7,
+      Dry: 5
+    },
+    quote: "People protect what they love.\n—— Jacques Cousteau"
+  },
+
+  {
+    name: "生物师范",
+    scores: {
+      Abstract: 8,
+      Theory: 7,
+      Structure: 1,
+      Independent: 9,
+      Delayed: 7,
+      Prestige: 5,
+      Precision: 7,
+      Stability: 2,
+      Dry: 5
+    },
+    quote: "如果一个专业最好的出路是教别人，并且让别人选这个专业，那这不是传销吗？"
+  },
+
+  {
+    name: "科普媒体",
+    scores: {
+      Abstract: 9,
+      Theory: 8,
+      Structure: 8,
+      Independent: 10,
+      Delayed: 8,
+      Prestige: 5,
+      Precision: 8,
+      Stability: 6,
+      Dry: 2
+    },
+    quote: "我们在小学二年级就学过，在亿万斯年间……"
+  },
+
+  {
+    name: "医学编辑",
+    scores: {
+      Abstract: 5,
+      Theory: 7,
+      Structure: 3,
+      Independent: 7,
+      Delayed: 7,
+      Prestige: 5,
+      Precision: 4,
+      Stability: 2,
+      Dry: 1
+    },
+    quote: "我 要 编 辑 你 ！"
+  },
+
+  {
+    name: "科研管理",
+    scores: {
+      Abstract: 5,
+      Theory: 8,
+      Structure: 2,
+      Independent: 10,
+      Delayed: 8,
+      Prestige: 5,
+      Precision: 6,
+      Stability: 1,
+      Dry: 1
+    },
+    quote: "伟大的科研背后，往往站着一个会报销的人。"
+  },
+
+  {
+    name: "考公考编",
+    scores: {
+      Abstract: 5,
+      Theory: 6,
+      Structure: 1,
+      Independent: 7,
+      Delayed: 4,
+      Prestige: 4,
+      Precision: 5,
+      Stability: 1,
+      Dry: 3
+    },
+    quote: "稳定的生活才是成年人的浪漫。"
+  },
+
+  {
+    name: "转专业",
+    scores: {
+      Abstract: 5,
+      Theory: 10,
+      Structure: 5,
+      Independent: 5,
+      Delayed: 8,
+      Prestige: 10,
+      Precision: 7,
+      Stability: 4,
+      Dry: 5
+    },
+    quote: "21世纪可能是新能源的世纪，也可能是人工智能的世纪，但总之绝对不是生物的世纪。"
+  }  ,
+
+  {
+    name: "咨询 / 销售 / 投资",
+    scores: {
+      Abstract: 4,
+      Theory: 10,
+      Structure: 8,
+      Independent: 10,
+      Delayed: 9,
+      Prestige: 10,
+      Precision: 8,
+      Stability: 7,
+      Dry: 1
+    },
+    quote: "第一条：永远不要亏钱。第二条：永远不要忘记第一条。\n—— Warren Buffett"
+  },
+
+  {
+    name: "创业",
+    scores: {
+      Abstract: 6,
+      Theory: 10,
+      Structure: 10,
+      Independent: 10,
+      Delayed: 5,
+      Prestige: 10,
+      Precision: 9,
+      Stability: 10,
+      Dry: 3
+    },
+    quote: "融资就是把故事讲到别人愿意掏钱为止。"
+  },
+
+  {
+    name: "医学遗传学",
+    scores: {
+      Abstract: 6,
+      Theory: 8,
+      Structure: 4,
+      Independent: 8,
+      Delayed: 4,
+      Prestige: 4,
+      Precision: 2,
+      Stability: 5,
+      Dry: 5
+    },
+    quote: "我们的命运，在我们的基因之中。\n—— James Watson"
+  },
+
+  {
+    name: "农业遗传学",
+    scores: {
+      Abstract: 7,
+      Theory: 9,
+      Structure: 2,
+      Independent: 6,
+      Delayed: 3,
+      Prestige: 5,
+      Precision: 4,
+      Stability: 3,
+      Dry: 8
+    },
+    quote: "我这辈子最大的错误，就是让你们吃得太饱了。"
+  },
+
+  {
+    name: "AI for Biology",
+    scores: {
+      Abstract: 2,
+      Theory: 8,
+      Structure: 8,
+      Independent: 7,
+      Delayed: 6,
+      Prestige: 8,
+      Precision: 4,
+      Stability: 7,
+      Dry: 1
+    },
+    quote: "Still doesn’t work."
+  },
+
+  {
+    name: "生物 / 医学统计学",
+    scores: {
+      Abstract: 2,
+      Theory: 7,
+      Structure: 6,
+      Independent: 9,
+      Delayed: 7,
+      Prestige: 6,
+      Precision: 1,
+      Stability: 3,
+      Dry: 1
+    },
+    quote: "统计学是科学的语法。\n—— Karl Pearson"
+  },
+
+  {
+    name: "类器官",
+    scores: {
+      Abstract: 6,
+      Theory: 8,
+      Structure: 4,
+      Independent: 7,
+      Delayed: 2,
+      Prestige: 4,
+      Precision: 2,
+      Stability: 8,
+      Dry: 10
+    },
+    quote: "取莲花七朵，藕为骨，荷叶为衣，莲花为身。\n——《封神演义》"
+  },
+
+  {
+    name: "古生物学",
+    scores: {
+      Abstract: 8,
+      Theory: 1,
+      Structure: 8,
+      Independent: 6,
+      Delayed: 1,
+      Prestige: 3,
+      Precision: 7,
+      Stability: 6,
+      Dry: 5
+    },
+    quote: "一块骨头，三篇论文，五种解释。"
+  },
+
+  {
+    name: "计算生物学",
+    scores: {
+      Abstract: 2,
+      Theory: 7,
+      Structure: 7,
+      Independent: 7,
+      Delayed: 4,
+      Prestige: 6,
+      Precision: 3,
+      Stability: 5,
+      Dry: 1
+    },
+    quote: "人生苦短，我用R。"
+  }
+];
+
+

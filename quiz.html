@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>答题 - BioMBTI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress"></div>
+            </div>
+            <div class="progress-text">
+                <span id="question-number">1</span> / 36
+            </div>
+        </div>
+        
+        <div class="question-box">
+            <h2 id="question-text" class="question-text">加载中...</h2>
+            
+            <div class="options-vertical" id="options-container">
+                <!-- 选项由JS生成 -->
+            </div>
+            
+            <div class="quiz-buttons">
+                <button id="prev-btn" class="back-button">返回上一题</button>
+                <button id="restart-btn" class="back-button secondary">重新开始</button>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2026 BioMBTI</p>
+        </footer>
+    </div>
+    
+    <script src="js/questions.js"></script>
+    <script src="js/calculate.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试结果 - BioMBTI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="result-main">
+            <p class="match-intro">根据你的特点，与你最匹配的方向是：</p>
+            <h1 id="best-match-name">加载中...</h1>
+            <p class="match-percentage-large" id="best-match-percentage"></p>
+            <blockquote id="best-match-quote"></blockquote>
+            <p class="best-match-intro" id="best-match-intro"></p>
+        </div>
+        
+        <div class="other-matches-section">
+            <div class="other-matches-header">
+                <h2>其他比较接近的方向</h2>
+                <button id="toggle-all-btn" class="small-button">显示所有方向的匹配度</button>
+            </div>
+            <div class="other-matches-list" id="other-matches"></div>
+        </div>
+        
+        <div class="all-matches-section" id="all-matches-section" style="display: none;">
+            <h2>所有方向匹配度</h2>
+            <div class="all-matches-list" id="all-matches-list"></div>
+        </div>
+        
+        <div class="axes-section">
+            <h2>你的工作偏好</h2>
+            <div class="axes-bars" id="axes-bars"></div>
+        </div>
+        
+        <div class="center">
+            <a href="quiz.html" class="button secondary">重新测试</a>
+            <a href="index.html" class="button secondary">返回首页</a>
+        </div>
+        
+        <div class="footer-notice">
+            <p>本网站是一个本科生娱乐所作。如果你认为结果不符合，请小红书私信<strong>@小刺猬胃出血</strong>，提出你的专业建议。</p>
+        </div>
+        
+        <footer>
+            <p class="disclaimer">*本网站纯属娱乐，不具备专业指导属性。测试结果仅供参考，请结合自身实际情况做出生涯决策。</p>
+            <p>&copy; 2026 BioMBTI</p>
+        </footer>
+    </div>
+    
+    <script src="js/questions.js"></script>
+    <script src="js/calculate.js"></script>
+    <script src="js/results.js"></script>
+</body>
+</html>
