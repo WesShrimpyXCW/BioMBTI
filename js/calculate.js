@@ -39,17 +39,78 @@ function calculateScores(questions, answers) {
 }
 
 function calculateDistance(userScores, resultScores) {
-  let sumSquaredDiff = 0;
-  let count = 0;
+  // 维度权重：某些维度对特定专业更重要
+  const axisWeights = {
+    "Abstract": 1.0,
+    "Theory": 1.0,
+    "Structure": 1.0,
+    "Independent": 1.0,
+    "Delayed": 1.0,
+    "Prestige": 1.0,
+    "Precision": 1.0,
+    "Stability": 1.0,
+    "Dry": 1.0
+  };
+  
+  let sumWeightedDiff = 0;
+  let uniquenessBonus = 0;
+  let extremeMatchCount = 0;
   
   for (const axis in userScores) {
-    const diff = userScores[axis] - resultScores[axis];
-    sumSquaredDiff += diff * diff;
-    count++;
+    const userScore = userScores[axis];
+    const resultScore = resultScores[axis];
+    const diff = userScore - resultScore;
+    
+    // 加权欧氏距离
+    sumWeightedDiff += axisWeights[axis] * diff * diff;
+    
+    // 独特性奖励：如果用户在某个维度得分极端（<=2或>=9）
+    // 且该专业在该维度也有极端分数（<=3或>=8）
+    const userExtreme = userScore <= 2 || userScore >= 9;
+    const resultExtreme = resultScore <= 3 || resultScore >= 8;
+    
+    if (userExtreme && resultExtreme) {
+      // 检查是否同向极端（都低或都高）
+      const userHigh = userScore >= 9;
+      const resultHigh = resultScore >= 8;
+      const userLow = userScore <= 2;
+      const resultLow = resultScore <= 3;
+      
+      if ((userHigh && resultHigh) || (userLow && resultLow)) {
+        extremeMatchCount++;
+      }
+    }
   }
   
-  // 使用欧氏距离，但加大权重让差距更明显
-  return Math.sqrt(sumSquaredDiff);
+  // 独特性奖励：每个匹配的极端维度降低距离
+  // 这样可以提高独特专业的匹配度
+  uniquenessBonus = extremeMatchCount * 1.5;
+  
+  // 惩罚过于"中间"的专业（所有维度都在4-6之间）
+  let isMiddleResult = true;
+  for (const axis in resultScores) {
+    if (resultScores[axis] < 4 || resultScores[axis] > 6) {
+      isMiddleResult = false;
+      break;
+    }
+  }
+  
+  let middlePenalty = 0;
+  if (isMiddleResult) {
+    // 如果用户有极端分数，惩罚中间专业
+    let userHasExtreme = false;
+    for (const axis in userScores) {
+      if (userScores[axis] <= 3 || userScores[axis] >= 8) {
+        userHasExtreme = true;
+        break;
+      }
+    }
+    if (userHasExtreme) {
+      middlePenalty = 2.0;  // 增加距离，降低匹配度
+    }
+  }
+  
+  return Math.sqrt(sumWeightedDiff) - uniquenessBonus + middlePenalty;
 }
 
 function calculateMatchPercentage(distance) {
