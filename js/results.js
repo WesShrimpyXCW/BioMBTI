@@ -151,7 +151,7 @@ const results = [
   },
   {
     name: "代谢与代谢疾病",
-    scores: { Abstract: 5, Theory: 7, Structure: 5, Independent: 6, Delayed: 4, Prestige: 6, Precision: 4, Stability: 6, Dry: 8 },
+    scores: { Abstract: 7, Theory: 7, Structure: 4, Independent: 7, Delayed: 4, Prestige: 6, Precision: 3, Stability: 6, Dry: 8 },
     quote: "You are what you eat.",
     intro: "研究生物体能量代谢与物质合成的调控网络，包括糖代谢、脂代谢、氨基酸代谢及线粒体功能。解析代谢综合征、糖尿病、肥胖及非酒精性脂肪肝等代谢性疾病的病理机制，探索代谢重编程在肿瘤和免疫中的调控作用。"
   },
@@ -175,7 +175,7 @@ const results = [
   },
   {
     name: "结构生物学",
-    scores: { Abstract: 1, Theory: 2, Structure: 6, Independent: 2, Delayed: 1, Prestige: 1, Precision: 1, Stability: 8, Dry: 6 },
+    scores: { Abstract: 2, Theory: 2, Structure: 6, Independent: 2, Delayed: 2, Prestige: 2, Precision: 2, Stability: 8, Dry: 6 },
     quote: "我现在每天能睡六个小时，比以前多多了。\n——施一公",
     intro: "利用X射线晶体学、冷冻电镜及核磁共振等技术测定生物大分子三维结构，阐明蛋白质、核酸及其复合物的精细构象。解析结构与功能的对应关系、分子识别机制及构象变化规律，为理性药物设计和蛋白质工程提供结构基础。"
   },
@@ -229,7 +229,7 @@ const results = [
   },
   {
     name: "基因工程",
-    scores: { Abstract: 4, Theory: 8, Structure: 5, Independent: 6, Delayed: 5, Prestige: 6, Precision: 4, Stability: 7, Dry: 8 },
+    scores: { Abstract: 3, Theory: 8, Structure: 4, Independent: 6, Delayed: 4, Prestige: 6, Precision: 4, Stability: 7, Dry: 8 },
     quote: "于是神照着自己的形象造人。\n——《创世纪 1:27》",
     intro: "通过重组DNA技术、基因编辑及基因转移等方法定向改造生物基因组。实现基因插入、敲除、替换及表达调控，用于基因功能研究、遗传改良及基因治疗，是现代生物技术的核心工具。"
   },
@@ -277,7 +277,7 @@ const results = [
   },
   {
     name: "动物行为学",
-    scores: { Abstract: 10, Theory: 5, Structure: 9, Independent: 2, Delayed: 4, Prestige: 3, Precision: 8, Stability: 7, Dry: 7 },
+    scores: { Abstract: 9, Theory: 5, Structure: 9, Independent: 2, Delayed: 4, Prestige: 3, Precision: 8, Stability: 7, Dry: 7 },
     quote: "只有理解，才会关心；只有关心，才会帮助。\n——Jane Goodall",
     intro: "研究动物在自然和实验条件下的行为模式及其生态适应意义，包括觅食行为、繁殖策略、社会结构及通讯行为。结合进化论和生态学原理，探讨行为的遗传基础、学习机制及环境适应价值。"
   },
@@ -289,13 +289,13 @@ const results = [
   },
   {
     name: "微生物生态/宏基因组",
-    scores: { Abstract: 8, Theory: 7, Structure: 4, Independent: 6, Delayed: 3, Prestige: 6, Precision: 7, Stability: 6, Dry: 5 },
+    scores: { Abstract: 8, Theory: 7, Structure: 4, Independent: 6, Delayed: 3, Prestige: 7, Precision: 7, Stability: 6, Dry: 5 },
     quote: "《通过靶向肠道菌群调控人体的物质需求欲望有望提高廉政文化建设效率》",
     intro: "研究复杂微生物群落结构与功能，通过宏基因组分析揭示其在环境或宿主中的作用。探讨微生物间及微生物与环境的相互作用，为理解生态系统功能和开发微生物应用技术提供基础。"
   },
   {
     name: "生态学",
-    scores: { Abstract: 10, Theory: 4, Structure: 8, Independent: 3, Delayed: 2, Prestige: 1, Precision: 8, Stability: 8, Dry: 5 },
+    scores: { Abstract: 9, Theory: 4, Structure: 8, Independent: 3, Delayed: 2, Prestige: 1, Precision: 8, Stability: 8, Dry: 5 },
     quote: "经费没有，热情管够。",
     intro: "研究生物与环境相互作用的规律，包括种群动态、群落结构、生态系统功能及生物多样性维持机制。探讨能量流动、物质循环及信息传递在生态系统中的组织方式，为生物多样性保护和生态恢复提供科学依据。"
   },
@@ -313,7 +313,7 @@ const results = [
   },
   {
     name: "生物师范",
-    scores: { Abstract: 8, Theory: 7, Structure: 1, Independent: 9, Delayed: 7, Prestige: 5, Precision: 7, Stability: 2, Dry: 5 },
+    scores: { Abstract: 8, Theory: 7, Structure: 2, Independent: 9, Delayed: 7, Prestige: 5, Precision: 7, Stability: 3, Dry: 5 },
     quote: "如果一个专业最好的出路是教别人，并且让别人选这个专业，那这不是传销吗？",
     intro: "培养具备扎实生物学专业知识和教育学理论的教学人才，研究生物学课程设计、教学方法及科学素养培养。将前沿科学知识转化为教学内容，提升中学生对生命科学的理解和兴趣。"
   },
@@ -331,7 +331,7 @@ const results = [
   },
   {
     name: "科研管理",
-    scores: { Abstract: 5, Theory: 8, Structure: 2, Independent: 10, Delayed: 8, Prestige: 5, Precision: 6, Stability: 1, Dry: 1 },
+    scores: { Abstract: 5, Theory: 8, Structure: 2, Independent: 10, Delayed: 8, Prestige: 5, Precision: 6, Stability: 1, Dry: 3 },
     quote: "伟大的科研背后，往往站着一个会报销的人。",
     intro: "从事科研项目的规划、组织、协调与管理工作，包括经费预算、进度控制、团队建设及成果转化。优化科研资源配置，保障科研项目顺利实施，促进科研成果产出和应用。"
   },
@@ -343,19 +343,19 @@ const results = [
   },
   {
     name: "转专业",
-    scores: { Abstract: 5, Theory: 10, Structure: 5, Independent: 5, Delayed: 8, Prestige: 10, Precision: 7, Stability: 4, Dry: 5 },
+    scores: { Abstract: 5, Theory: 5, Structure: 5, Independent: 5, Delayed: 8, Prestige: 7, Precision: 7, Stability: 4, Dry: 5 },
     quote: "21世纪可能是新能源的世纪，也可能是人工智能的世纪，但总之绝对不是生物的世纪。",
     intro: "将生物学训练获得的科学思维和实验技能迁移至其他学科领域，如医学、法学、计算机科学、金融或工程。利用跨学科背景在新兴交叉领域寻求发展机会，拓展职业选择范围。"
   },
   {
     name: "咨询 / 销售 / 投资",
-    scores: { Abstract: 4, Theory: 10, Structure: 8, Independent: 10, Delayed: 9, Prestige: 10, Precision: 8, Stability: 7, Dry: 1 },
+    scores: { Abstract: 4, Theory: 6, Structure: 7, Independent: 9, Delayed: 9, Prestige: 7, Precision: 8, Stability: 7, Dry: 1 },
     quote: "第一条：永远不要亏钱。第二条：永远不要忘记第一条。\n—— Warren Buffett",
     intro: "为生命科学企业提供市场分析、技术评估、战略规划或投融资服务。基于对生物学和市场的双重理解，促进技术商业化，连接科研创新与市场需求，推动产业发展。"
   },
   {
     name: "创业",
-    scores: { Abstract: 6, Theory: 10, Structure: 10, Independent: 10, Delayed: 5, Prestige: 10, Precision: 9, Stability: 10, Dry: 3 },
+    scores: { Abstract: 6, Theory: 8, Structure: 5, Independent: 9, Delayed: 5, Prestige: 10, Precision: 9, Stability: 10, Dry: 3 },
     quote: "融资就是把故事讲到别人愿意掏钱为止。",
     intro: "识别生物技术领域的商业机会，创建新企业整合技术、人才和资本资源。承担市场风险，将科研成果转化为产品或服务，通过创新商业模式实现技术价值和市场增长。"
   },
