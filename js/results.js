@@ -127,7 +127,7 @@ const results = [
   },
   {
     name: "衰老研究",
-    scores: { Abstract: 4, Theory: 6, Structure: 3, Independent: 4, Delayed: 1, Prestige: 5, Precision: 4, Stability: 10, Dry: 8 },
+    scores: { Abstract: 4, Theory: 6, Structure: 3, Independent: 4, Delayed: 2, Prestige: 5, Precision: 4, Stability: 7, Dry: 8 },
     quote: "遣徐福发童男女数千人，入海求仙人不死药。\n——《史记·秦始皇本纪》",
     intro: "研究生物体随时间推移功能衰退的生物学机制，包括基因组不稳定性、端粒损耗、表观遗传改变、蛋白稳态丧失及线粒体功能障碍。探索衰老相关信号通路和衰老细胞清除机制，为延长健康寿命和防治老年性疾病提供科学依据。"
   },
@@ -169,7 +169,7 @@ const results = [
   },
   {
     name: "生物化学",
-    scores: { Abstract: 2, Theory: 3, Structure: 4, Independent: 3, Delayed: 4, Prestige: 2, Precision: 1, Stability: 6, Dry: 7 },
+    scores: { Abstract: 2, Theory: 3, Structure: 4, Independent: 3, Delayed: 4, Prestige: 3, Precision: 2, Stability: 6, Dry: 7 },
     quote: "Life is chemistry.",
     intro: "研究生物体内化学反应的本质与规律，包括酶催化机制、代谢途径调控、生物能量转换及分子相互作用。从化学角度解析生命活动的基本过程，为理解代谢疾病、开发酶制剂及设计代谢工程策略提供理论基础。"
   },
@@ -181,7 +181,7 @@ const results = [
   },
   {
     name: "生物物理学",
-    scores: { Abstract: 1, Theory: 2, Structure: 7, Independent: 3, Delayed: 2, Prestige: 2, Precision: 1, Stability: 9, Dry: 4 },
+    scores: { Abstract: 2, Theory: 2, Structure: 7, Independent: 3, Delayed: 2, Prestige: 2, Precision: 2, Stability: 9, Dry: 4 },
     quote: "只有一门真正的科学，那就是物理学；其他都是社会工作。\n—— James Watson",
     intro: "应用物理学原理和方法研究生物系统，包括生物分子力学特性、膜生物物理、神经生物物理及生物光子学。利用单分子技术和物理建模解析蛋白质折叠、分子马达机制及细胞力学行为，为理解生命过程的物理本质提供视角。"
   },
@@ -199,13 +199,13 @@ const results = [
   },
   {
     name: "计算药物发现",
-    scores: { Abstract: 2, Theory: 9, Structure: 6, Independent: 7, Delayed: 7, Prestige: 8, Precision: 3, Stability: 6, Dry: 1 },
+    scores: { Abstract: 2, Theory: 9, Structure: 6, Independent: 7, Delayed: 7, Prestige: 8, Precision: 3, Stability: 6, Dry: 2 },
     quote: "神农尝百草之滋味，一日而遇七十毒。\n——《淮南子》",
     intro: "利用分子对接、虚拟筛选、分子动力学模拟及机器学习等方法预测药物靶点相互作用，优化先导化合物结构。通过计算方法减少实验筛选成本，加速药物研发进程，为创新药物设计提供理论指导和工具支撑。"
   },
   {
     name: "演化生物学/群体遗传学",
-    scores: { Abstract: 5, Theory: 3, Structure: 8, Independent: 4, Delayed: 4, Prestige: 1, Precision: 3, Stability: 7, Dry: 2 },
+    scores: { Abstract: 5, Theory: 3, Structure: 8, Independent: 4, Delayed: 4, Prestige: 2, Precision: 3, Stability: 7, Dry: 2 },
     quote: "生存下来的物种，不是最强的，也不是最聪明的，而是对变化最敏感的。",
     intro: "研究生物演化规律与遗传变异在群体中的分布变化，包括自然选择、遗传漂变、基因流及性选择的作用机制。解析适应性演化的分子基础，重建物种演化历史，为理解生物多样性起源和保护遗传学提供理论依据。"
   },
@@ -223,13 +223,13 @@ const results = [
   },
   {
     name: "生物制药",
-    scores: { Abstract: 5, Theory: 10, Structure: 4, Independent: 4, Delayed: 6, Prestige: 8, Precision: 3, Stability: 4, Dry: 8 },
+    scores: { Abstract: 5, Theory: 9, Structure: 4, Independent: 4, Delayed: 6, Prestige: 8, Precision: 3, Stability: 4, Dry: 8 },
     quote: "该药物将在晚期临床成功后向FDA申请上市批准。",
     intro: "利用基因工程、细胞工程及发酵工程技术开发蛋白质药物、抗体药物、疫苗及核酸药物。涵盖从靶点发现、分子设计、生产工艺到质量控制的全流程，为重大疾病治疗提供创新药物解决方案。"
   },
   {
     name: "基因工程",
-    scores: { Abstract: 3, Theory: 8, Structure: 4, Independent: 6, Delayed: 4, Prestige: 6, Precision: 4, Stability: 7, Dry: 8 },
+    scores: { Abstract: 3, Theory: 8, Structure: 4, Independent: 6, Delayed: 4, Prestige: 6, Precision: 3, Stability: 7, Dry: 8 },
     quote: "于是神照着自己的形象造人。\n——《创世纪 1:27》",
     intro: "通过重组DNA技术、基因编辑及基因转移等方法定向改造生物基因组。实现基因插入、敲除、替换及表达调控，用于基因功能研究、遗传改良及基因治疗，是现代生物技术的核心工具。"
   },
@@ -241,7 +241,7 @@ const results = [
   },
   {
     name: "医疗器械",
-    scores: { Abstract: 7, Theory: 10, Structure: 4, Independent: 9, Delayed: 8, Prestige: 9, Precision: 4, Stability: 3, Dry: 3 },
+    scores: { Abstract: 7, Theory: 9, Structure: 4, Independent: 9, Delayed: 8, Prestige: 9, Precision: 4, Stability: 3, Dry: 3 },
     quote: "从核磁共振，到柔情猫娘。",
     intro: "研发用于疾病诊断、治疗及监测的医学仪器设备，包括医学影像设备、体外诊断仪器、植入式器械及康复辅助器具。融合工程技术、材料科学与临床医学，为精准医疗提供硬件支撑。"
   },
@@ -271,7 +271,7 @@ const results = [
   },
   {
     name: "行为/系统神经科学",
-    scores: { Abstract: 9, Theory: 6, Structure: 7, Independent: 5, Delayed: 3, Prestige: 4, Precision: 6, Stability: 7, Dry: 8 },
+    scores: { Abstract: 9, Theory: 6, Structure: 7, Independent: 4, Delayed: 3, Prestige: 4, Precision: 6, Stability: 7, Dry: 8 },
     quote: "我思故我在。",
     intro: "从神经网络和系统层面研究行为的神经机制，整合电生理、成像及光遗传技术研究神经环路功能。解析感觉信息处理、运动控制、决策行为及社会行为的神经基础，探讨神经精神疾病的发病机制。"
   },
@@ -319,25 +319,25 @@ const results = [
   },
   {
     name: "科普媒体",
-    scores: { Abstract: 9, Theory: 8, Structure: 8, Independent: 10, Delayed: 8, Prestige: 5, Precision: 8, Stability: 6, Dry: 2 },
+    scores: { Abstract: 9, Theory: 8, Structure: 8, Independent: 9, Delayed: 8, Prestige: 5, Precision: 8, Stability: 6, Dry: 2 },
     quote: "我们在小学二年级就学过，在亿万斯年间……",
     intro: "从事科学内容的创作、编辑与传播工作，将复杂的生物学知识转化为公众可理解的科普作品。通过文字、影像及新媒体平台传播科学思想，提升公众科学素养和科学思辨能力。"
   },
   {
     name: "医学编辑",
-    scores: { Abstract: 5, Theory: 7, Structure: 3, Independent: 7, Delayed: 7, Prestige: 5, Precision: 4, Stability: 2, Dry: 1 },
+    scores: { Abstract: 5, Theory: 7, Structure: 3, Independent: 7, Delayed: 7, Prestige: 5, Precision: 4, Stability: 2, Dry: 2 },
     quote: "我 要 编 辑 你 ！",
     intro: "负责医学学术期刊和出版物的编辑出版工作，包括稿件评审、学术规范审核、语言润色及出版流程管理。连接科研人员与学术出版体系，确保科研成果的准确传播和学术质量。"
   },
   {
     name: "科研管理",
-    scores: { Abstract: 5, Theory: 8, Structure: 2, Independent: 10, Delayed: 8, Prestige: 5, Precision: 6, Stability: 1, Dry: 3 },
+    scores: { Abstract: 5, Theory: 8, Structure: 2, Independent: 9, Delayed: 8, Prestige: 5, Precision: 6, Stability: 2, Dry: 3 },
     quote: "伟大的科研背后，往往站着一个会报销的人。",
     intro: "从事科研项目的规划、组织、协调与管理工作，包括经费预算、进度控制、团队建设及成果转化。优化科研资源配置，保障科研项目顺利实施，促进科研成果产出和应用。"
   },
   {
     name: "考公考编",
-    scores: { Abstract: 5, Theory: 6, Structure: 1, Independent: 7, Delayed: 4, Prestige: 4, Precision: 5, Stability: 1, Dry: 3 },
+    scores: { Abstract: 5, Theory: 6, Structure: 2, Independent: 7, Delayed: 4, Prestige: 4, Precision: 5, Stability: 2, Dry: 3 },
     quote: "稳定的生活才是成年人的浪漫。",
     intro: "通过公务员考试或事业单位招聘进入公共部门，从事科技政策制定、公共卫生管理、教育行政或环境保护等工作。以制度化的方式参与社会治理和公共服务，保障工作的稳定性和社会价值。"
   },
@@ -349,13 +349,13 @@ const results = [
   },
   {
     name: "咨询 / 销售 / 投资",
-    scores: { Abstract: 4, Theory: 6, Structure: 7, Independent: 9, Delayed: 9, Prestige: 7, Precision: 8, Stability: 7, Dry: 1 },
+    scores: { Abstract: 4, Theory: 6, Structure: 7, Independent: 9, Delayed: 9, Prestige: 7, Precision: 8, Stability: 7, Dry: 2 },
     quote: "第一条：永远不要亏钱。第二条：永远不要忘记第一条。\n—— Warren Buffett",
     intro: "为生命科学企业提供市场分析、技术评估、战略规划或投融资服务。基于对生物学和市场的双重理解，促进技术商业化，连接科研创新与市场需求，推动产业发展。"
   },
   {
     name: "创业",
-    scores: { Abstract: 6, Theory: 8, Structure: 5, Independent: 9, Delayed: 5, Prestige: 10, Precision: 9, Stability: 10, Dry: 3 },
+    scores: { Abstract: 6, Theory: 8, Structure: 5, Independent: 9, Delayed: 5, Prestige: 9, Precision: 9, Stability: 10, Dry: 3 },
     quote: "融资就是把故事讲到别人愿意掏钱为止。",
     intro: "识别生物技术领域的商业机会，创建新企业整合技术、人才和资本资源。承担市场风险，将科研成果转化为产品或服务，通过创新商业模式实现技术价值和市场增长。"
   },
@@ -385,7 +385,7 @@ const results = [
   },
   {
     name: "类器官",
-    scores: { Abstract: 6, Theory: 8, Structure: 4, Independent: 7, Delayed: 2, Prestige: 4, Precision: 2, Stability: 8, Dry: 10 },
+    scores: { Abstract: 6, Theory: 8, Structure: 4, Independent: 7, Delayed: 2, Prestige: 4, Precision: 2, Stability: 8, Dry: 9 },
     quote: "取莲花七朵，藕为骨，荷叶为衣，莲花为身。\n——《封神演义》",
     intro: "在体外利用干细胞培养具有三维结构和部分生理功能的微型器官，模拟器官发育和疾病过程。用于发育机制研究、疾病建模、药物筛选及个性化医疗，弥补动物模型的局限性。"
   },
